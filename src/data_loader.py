@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 
-TICKERS = {"BBRI": "BBRI.JK", "BMRI": "BMRI.JK"}
 START = "2020-01-01"
 
 def download_data(ticker, start=START):
