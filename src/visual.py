@@ -3,6 +3,7 @@
 import matplotlib
 matplotlib.use("Agg")          # supaya bisa jalan tanpa GUI / simpan ke file
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 def buat_plot(data, outfile="output/analisis_bbri_bmri.png"):
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 9))
@@ -25,6 +26,9 @@ def buat_plot(data, outfile="output/analisis_bbri_bmri.png"):
     ax2.legend()
     ax2.grid(alpha=0.3)
 
+    outfile = Path(outfile)
+    outfile.parent.mkdir(parents=True, exist_ok=True)
+    
     plt.tight_layout()
     plt.savefig(outfile, dpi=120)
     print(f"\n[OK] Grafik disimpan: {outfile}")
