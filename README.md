@@ -20,14 +20,14 @@ volatilitas, dan Sharpe Ratio.
 ## 📁 Struktur Project
 ```
 bbri-return-analysis/
-└── output/
+├── output/
     ├── analisis_bbri_bmri.png
     └── ringkasan_statistik.csv
-└── src/
+├── src/
     ├── data_loader.py
     ├── metrics.py
     └── visual.py
-└── test/
+├── test/
     ├── test_data_loader.py
     ├── test_metrics.py
     └── test_visual.py
