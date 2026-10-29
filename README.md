@@ -34,7 +34,7 @@ bbri-return-analysis/
 ├── .gitignore
 ├── main.py
 ├── README.md
-├── requirements.txt   
+└── requirements.txt   
 ```
 
 ## 🔍 Cara Menjalankan
